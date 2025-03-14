@@ -1,0 +1,22 @@
+package com.abc.model;
+
+public class EmployeeTree<Employee> {
+	
+	private EmpNode<Employee> rootEmployee;
+
+	public EmpNode<Employee> getRootEmployee() {
+		return rootEmployee;
+	}
+
+	public void setRootEmployee(EmpNode<Employee> rootEmployee) {
+		this.rootEmployee = rootEmployee;
+	}
+
+	@Override
+	public String toString() {
+		return "EmployeeTree [rootEmployee=" + rootEmployee + "]";
+	}
+	
+	
+
+}

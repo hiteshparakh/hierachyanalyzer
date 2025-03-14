@@ -1,0 +1,60 @@
+package com.abc.model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class EmpNode<Employee> {
+
+	private Employee emp;
+	private List<Employee> empReportees = new ArrayList<Employee>();
+	private Employee empManager;
+
+	public void addReportee(List<Employee> reportee) {
+//       reportee.setEmpManager(this);
+		empReportees.addAll(reportee);
+	}
+
+	public Employee getEmp() {
+		return emp;
+	}
+
+	public void setEmp(Employee emp) {
+		this.emp = emp;
+	}
+
+	public Employee getEmpManager() {
+		return empManager;
+	}
+
+	public void setEmpManager(Employee empManager) {
+		this.empManager = empManager;
+	}
+
+	
+
+//	List<Node<Employee>> nodeList = new ArrayList<Node<Employee>>();
+//	if(mgrEmp != null) {
+//		
+//		Node<Employee> newNode = new Node<Employee>();
+//		for (int j = 0; j < empList.size(); j++) {
+//			newNode.setEmp(mgrEmp);
+////			newNode.setEmpManager(new Node<Employee>(mgrEmp));
+//			newNode.addReportee(new Node<Employee> (empList.get(j)));
+//			nodeList.add(newNode);
+//		}
+//		
+//	}
+//	System.out.println(nodeList);
+////		n.setEmpReportees(nodeList);
+//		
+//		if(mgrEmp == null) {
+//			n.setEmp(empList.get(0));
+//			empTree.setRootEmployee(n);
+//		}
+//		
+	@Override
+	public String toString() {
+		return "EmpNode [emp=" + emp + ", empReportees=" + empReportees + ", empManager=" + empManager + "]";
+	}
+
+}

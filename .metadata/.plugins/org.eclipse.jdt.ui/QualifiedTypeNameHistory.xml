@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.apache.commons.csv.CSVParser"/>
+    <fullyQualifiedTypeName name="org.apache.commons.lang.StringUtils"/>
+    <fullyQualifiedTypeName name="jakarta.ws.rs.core.MultivaluedMap"/>
+    <fullyQualifiedTypeName name="jakarta.ws.rs.core.MultivaluedHashMap"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="org.apache.commons.csv.CSVFormat"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="com.abc.model.EmployeeTree"/>
+    <fullyQualifiedTypeName name="com.abc.model.Node"/>
+    <fullyQualifiedTypeName name="com.abc.model.Employee"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+</qualifiedTypeNameHistroy>

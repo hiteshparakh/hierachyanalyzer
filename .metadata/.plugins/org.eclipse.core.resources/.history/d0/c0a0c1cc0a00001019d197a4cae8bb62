@@ -1,0 +1,67 @@
+package com.abc.model;
+
+import java.util.Objects;
+
+public class Employee {
+	
+	private int employeeId;
+	private String employeeFirstName;
+	private String employeeLastName;
+	private int employeeSalary;
+	
+	public Employee(int employeeId, String employeeFirstName, String employeeLastName, int employeeSalary) {
+		super();
+		this.employeeId = employeeId;
+		this.employeeFirstName = employeeFirstName;
+		this.employeeLastName = employeeLastName;
+		this.employeeSalary = employeeSalary;
+	}
+	
+	public int getEmployeeId() {
+		return employeeId;
+	}
+	public void setEmployeeId(int employeeId) {
+		this.employeeId = employeeId;
+	}
+	public String getEmployeeFirstName() {
+		return employeeFirstName;
+	}
+	public void setEmployeeFirstName(String employeeFirstName) {
+		this.employeeFirstName = employeeFirstName;
+	}
+	public String getEmployeeLastName() {
+		return employeeLastName;
+	}
+	public void setEmployeeLastName(String employeeLastName) {
+		this.employeeLastName = employeeLastName;
+	}
+	public int getEmployeeSalary() {
+		return employeeSalary;
+	}
+	public void setEmployeeSalary(int employeeSalary) {
+		this.employeeSalary = employeeSalary;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(employeeFirstName, employeeId, employeeLastName, employeeSalary);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		System.out.println("--------");
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Employee other = (Employee) obj;
+		boolean val =  Objects.equals(employeeFirstName, other.employeeFirstName) && employeeId == other.employeeId
+				&& Objects.equals(employeeLastName, other.employeeLastName) && employeeSalary == other.employeeSalary;
+		System.out.println(val);
+		return val;
+	}
+	
+	
+}

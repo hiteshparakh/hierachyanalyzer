@@ -1,0 +1,38 @@
+package com.abc.model;
+
+import java.util.List;
+
+public class EmpNode<Employee> {
+
+	private Employee emp;
+	private List<EmpNode<Employee>> empReportees;
+	private EmpNode<Employee> empManager;
+	
+   public void addReportee(EmpNode<Employee> reportee) {
+       reportee.setEmpManager(this);
+       empReportees.add(reportee);
+   }
+
+	public Employee getEmp() {
+		return emp;
+	}
+
+	public void setEmp(Employee emp) {
+		this.emp = emp;
+	}
+
+	public EmpNode<Employee> getEmpManager() {
+		return empManager;
+	}
+
+	public void setEmpManager(EmpNode<Employee> empManager) {
+		this.empManager = empManager;
+	}
+
+	@Override
+	public String toString() {
+		return "Node [emp=" + emp + ", empReportees=" + empReportees + ", empManager=" + empManager + "]";
+	}
+   
+   
+}
