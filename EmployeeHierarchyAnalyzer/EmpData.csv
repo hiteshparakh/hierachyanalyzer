@@ -4,3 +4,6 @@ id,firstName,lastName,salary,managerId
 125,Bob,Ronstad,47000,123
 300,Alice,Hasacat,50000,124
 305,Brett,Hardleaf,34000,300
+306,Aaron,Douglas,34000,305
+307,Pat,Cummins,64000,306
+310,Alan,Heathrow,24000,307

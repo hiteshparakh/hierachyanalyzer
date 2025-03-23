@@ -7,8 +7,6 @@ public class Node<Employee> {
 
 	private Employee emp;
 	private List<Node<Employee>> empReportees;
-	private Node<Employee> empManager;
-
 	
 	public Node() {
 		super();
@@ -16,8 +14,8 @@ public class Node<Employee> {
 	}
 
 	public Node(Employee data) {
-        this.emp = data;
-        this.empReportees = new ArrayList<Node<Employee>>();
+        this();
+		setEmp(data);
     }
 	
 	/**
@@ -32,7 +30,6 @@ public class Node<Employee> {
 	}
 
 	public void addReportee(Node<Employee> reportee) {
-		reportee.setEmpManager(this);
 		empReportees.add(reportee);
 	}
 
@@ -53,22 +50,9 @@ public class Node<Employee> {
 		this.emp = emp;
 	}
 
-	public Node<Employee> getEmpManager() {
-		return empManager;
-	}
-
-	public void setEmpManager(Node<Employee> empManager) {
-		this.empManager = empManager;
-	}
-
 	@Override
 	public String toString() {
-		return "Node [emp=" + emp + ", empManager=" + empManager + "]";
+		return "Node [emp=" + emp + ", empReportees=" + empReportees + "]";
 	}
-
-//	@Override
-//	public String toString() {
-//		return "Node [emp=" + emp + ", empReportees=" + empReportees + ", empManager=" + empManager + "]";
-//	}
 
 }

@@ -1,7 +1,5 @@
 package com.abc.model;
 
-import java.util.Objects;
-
 public class Employee {
 	
 	private int employeeId;
@@ -45,8 +43,7 @@ public class Employee {
 	@Override
 	public String toString() {
 		return "Employee [employeeId=" + employeeId + ", employeeFirstName=" + employeeFirstName + ", employeeLastName="
-				+ employeeLastName + "]";
+				+ employeeLastName + ", employeeSalary=" + employeeSalary + "]";
 	}
 
-	
 }
